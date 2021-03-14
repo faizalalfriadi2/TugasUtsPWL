@@ -5,14 +5,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>Reptil Eksotik Nusantara</title>
+    <style>
+        .navbar-nav {
+          padding-right: 100px;
+        }
+
+        .nav-item {
+          padding-right: 25px;
+        }
+
+        #mycarousel {
+          height: 100vh;
+        }
+
+        .carousel-item img {
+          height: 100vh;
+        }
+
+        section {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+
+        #home {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+
+        #profile{
+          height: 700px;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+
+        .parallax {
+          background-image: url('../TugasUtsPWL/img/reptil.jpg');
+
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    </style>
   </head>
-  <body>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar"> 
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><b>Reptil </b>Eksotik Nusantara</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +74,10 @@
                   <a class="nav-link" href="#profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Ekosistem</a>
+                  <a class="nav-link" href="#list">List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -38,7 +86,7 @@
     </header>
 
     <section id="home">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -52,30 +100,133 @@
             <img src="../TugasUtsPWL/img/111kura.img.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="../TugasUtsPWL/img/viper.img" class="d-block w-100" alt="...">
+            <img src="../TugasUtsPWL/img/soa-layar.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel"  data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#mycarousel"  data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
 
-    <section id="">
-
+    <section id="profile" class="bg-secondary parallax">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-8 mx-auto text-center">
+                  <h1>Reptil Eksotik Nusantara</h1>
+                  <p> Ada beberapa reptil endemik Indonesia seperti Sulawesi Bloodsucker, Komodo Dragon, 
+                      serta penyu hutan Sulawesi. Dengan kata lain, hewan-hewan tersebut tidak hidup di tempat lain selain nusantara. 
+                      Berikut beberapa list reptil asli Indonesia</p>
+              </div>
+            </div>
+        </div>
     </section>
 
-    <section id="">
-
+    <section id="list" class="bg-primary">
+        <div class="row pt-4 mb-4">
+            <br></br>
+            <h2 class="text-center text-black"><b>List reptil</b></h2>
+          </div>
+    
+          <div class="row">
+            <div class="col-md mb-4">
+            <br/>
+              <div class="card-body bg-info">
+                <h5 class="text-center text-white">1. King Cobra</h5>
+                <img class="card-img-top" src="../TugasUtsPWL/img/imagekkobra.img" alt="Card image cap">
+                  <p style="color: black; text-align: center;">
+                    Ular king kobra atau Ophiophagus hannah sering dianggap sebagai raja ular berbisa yang paling mematikan. 
+                    Padahal bisa ular king kobra yang di Indonesia disebut juga ular tedung atau ular anang, 
+                    menurut beberapa sumber yang dilansir Alamendah, dianggap tidak sebahaya gigitan ular kobra atau ular sendok 
+                    (Naja sp.) dan ular welang (Bungarus fasciatus).</p>
+              </div>
+            </div>
+    
+            <div class="col-md mb-4">
+            <br/>
+                <div class="card-body bg-info">
+                  <h5 class="text-center text-white">2. Soa Layar </h5>
+                  <img class="card-img-top" src="../TugasUtsPWL/img/soa-layar.jpg" st alt="Card image cap">                  
+                    <p style="color: black; text-align: center;"> 
+                      Layar hidup di pepohonan sekitar aliran sungai atau kolam yang ada di hutan. 
+                      Mereka hidup dengan mengonsumsi tanaman, daun-daunan, dan buah-buahan. 
+                      Selain itu, kadal bersirip ini juga memakan serangga, kaki seribu dan mangsa kecil lainnya. 
+                      Satwa ini mampu hidup hingga usia 15 tahun atau lebih .</p>
+                </div>
+            </div>
+            
+              <div class="col-md mb-4">
+                <br/>
+                  <div class="card-body bg-info">
+                    <h5 class="text-center text-white">3. Reticulatus piton</h5>
+                    <img class="card-img-top" src="../TugasUtsPWL/img/retic.jpg" alt="Card image cap">                  
+                        <p style="color: black; text-align: center;">
+                          Sanca kembang atau sanca batik atau disebut juga sanca timur laut adalah sejenis ular 
+                          dari suku Pythonidae yang berukuran besar dan memiliki ukuran tubuh terpanjang di antara ular lain. 
+                          Ukuran terbesarnya dikatakan dapat melebihi 8.5 meter dan merupakan ular terpanjang di dunia. 
+                          Lebih panjang dari anakonda (Eunectes), ular terbesar dan terpanjang di Amerika Selatan.</p>
+                  </div>
+              </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-md mb-4">
+              <br/>
+                 <div class="card-body bg-info">
+                  <h5 class="text-center text-white">4. Kadal Panana</h5>
+                  <img class="card-img-top" src="../TugasUtsPWL/img/kadal-panana.img" alt="Card image cap">
+                      <p style="color: black; text-align: center;">
+                        PANANA (BLUE TONGUE) Bluetongue adalah salah satu family dari kadal (scincidae), 
+                        banyak nama untuk hobis untuk memanggil jenis kadal ini yakni,bluetongue , panana , kadal lidah biru 
+                        dan ular berkaki empat. Kenapa orang luar memanggilnya dengan bluetongue? 
+                        Seperti yang kita liat bahwa kadal ini memiliki lidah berwarna biru </p>
+                </div>        
+            </div>
+          
+            <div class="col-md mb-4">
+              <br/>
+                <div class="card-body bg-info">
+                  <h5 class="text-center text-white">5. Ular Cincin Mas </h5>
+                  <img class="card-img-top" src="../TugasUtsPWL/img/cincinmas.jpg" alt="Card image cap">                  
+                      <p style="color:black; text-align: center;">
+                          Ular cincin-emas atau yang juga dikenal dengan nama ular tali wangsa atau ular bakau (
+                          nama yang juga digunakan untuk spesies F. leucobalia), 
+                          adalah spesies ular berbisa menengah dari suku Colubridae.
+                          Ular ini diberi nama ular cincin-emas karena belang-belang berwarna kuning emas yang terdapat di punggungnya.</p>
+                </div>  
+            </div>
+                      
+            <div class="col-md mb-4">            
+              <br/>                
+                <div class="card-body bg-info">                
+                  <h5 class="text-center text-white">6. Komodo</h5>                
+                  <img class="card-img-top" src="../TugasUtsPWL/img/kodomo.img" alt="Card image cap">                                
+                      <p style="color: black; text-align: center;">
+                        Komodo adalah salah satu hewan langka Reptil Purba yang dilindungi dan hanya ada di Pulau Komodo, Indonesia. 
+                        Komodo atau yang biasa disebut biawak komodo (Varanus komodoensis) merupakan spesies kadal terbesar di dunia.
+                        Biawak raksasa ini tepatnya hidup di pulau Komodo, Rinca, Flores, Gili Motang dan Gili Dasami, Nusa Tenggara.</p>
+                </div>
+            </div>
+          </div>
     </section>
 
-    <section id="">
 
+    <section id="contact" class="bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mx-auto text-center">
+            Moch Faizal
+          </div>
+          <div class="col-md-4 mx-auto text-center">
+            Aldi Azhari
+          </div>
+        </div>
+      </div>
     </section>
 
     
